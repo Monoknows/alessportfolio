@@ -1,7 +1,7 @@
 import React from "react";
-import "./AboutMe.css";
+import "./Aboutme.css";
 
-const AboutMe = ({ onBack }) => {
+const Aboutme = ({ onBack }) => {     // ✅ renamed component
   return (
     <section className="aboutme">
       <div className="aboutme-image">
@@ -17,17 +17,17 @@ const AboutMe = ({ onBack }) => {
           continuing to grow as a student leader and creative thinker.
         </p>
         <div className="info">
-            <p><b>Age:</b> 21</p>
-            <p><b>Birthday:</b> August 20, 2004</p>
-            <p><b>Address:</b> Plaridel, Bulacan</p>
-            <p><b>Nationality:</b> Filipino</p>
-            <p><b>Religion:</b> Catholic</p>
-          </div>
+          <p><b>Age:</b> 21</p>
+          <p><b>Birthday:</b> August 20, 2004</p>
+          <p><b>Address:</b> Plaridel, Bulacan</p>
+          <p><b>Nationality:</b> Filipino</p>
+          <p><b>Religion:</b> Catholic</p>
+        </div>
 
-            <button className="cta-btn" onClick={onBack}>Back</button>
+        <button className="cta-btn" onClick={onBack}>Back</button>
       </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default Aboutme;   // ✅ updated export

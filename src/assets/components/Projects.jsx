@@ -1,27 +1,27 @@
 import './Projects.css';
 
-function Project() {
+function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Pixzen',
-      description: 'Capture and share your best moments effortlessly with PicZen.',
-      image: '/logos/pixzen.png',
-      link: '#'
+      title: 'My Portfolio Website',
+      description: 'Explore my world, one project at a time, and meet the latest me.',
+      image: '/logos/portfolio.png',
+      link: 'https://github.com/alesslovejungkook/portfolio'
     },
     {
       id: 2,
       title: 'Luxxe Palace Hotel',
       description: 'Experience luxury and comfort at Luxxe Palace Hotel in Bulacan.',
-      image: '/logos/myhotel.png',
-      link: '#'
+      image: '/logos/hotelsystem.png',
+      link: 'https://github.com/alesslovejungkook/myhotelsystem/tree/main/Downloads/MyHotelSystem/MyHotelSystem'
     },
     {
       id: 3,
       title: 'Bulacan',
       description: 'Your go-to online guide for everything happening in Bulacan.',
       image: '/logos/bulacann.png',
-      link: '#'
+      link: 'https://github.com/alesslovejungkook/bulacanaless.git'
     },
     {
       id: 4,
@@ -50,4 +50,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Projects;

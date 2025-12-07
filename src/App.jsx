@@ -2,14 +2,14 @@ import { useState, useRef } from 'react';
 import './App.css';
 import Header from './assets/components/Header.jsx';
 import About from './assets/components/About.jsx';
-import AboutMe from './assets/components/Aboutme.jsx';
+import Aboutme from './assets/components/Aboutme.jsx';   // ✅ Correct import (matches your file)
 import Skills from './assets/components/Skills.jsx';
 import Footer from './assets/components/Footer.jsx';
 import Projects from './assets/components/Projects.jsx';
-import API from './assets/components/Api.jsx'; 
+import Api from './assets/components/Api.jsx'; 
 import Contact from './assets/components/Contact.jsx';
-import Certificates from './assets/components/Certificates.jsx';
-import Background from './assets/components/Background';
+import Certificates from './assets/components/Email.jsx';
+import Background from './assets/components/Background.jsx'; // ✅ add .jsx for consistency
 import Quotes from './assets/components/Quotes.jsx'; 
 
 function App() {
@@ -70,7 +70,7 @@ function App() {
             className={`section aboutme-dropdown ${isHiding ? "hide" : "show"}`}
             ref={aboutMeRef}
           >
-            <AboutMe onBack={handleHideAboutMe} />
+            <Aboutme onBack={handleHideAboutMe} />   {/* ✅ matches your file name */}
           </section>
         )}
 
@@ -86,18 +86,18 @@ function App() {
           <Skills />
         </section>
 
-        <section id="certificates" className="section">
-          <h2 className="section-header">Certificates</h2>
-          <Certificates />
-        </section>
-
         <section id="contact" className="section">
           <h2 className="section-header">Contact</h2>
           <Contact />  
         </section>
 
+        <section id="certificates" className="section">
+          <h2 className="section-header">Message</h2>
+          <Certificates />
+        </section>
+
         <section id="funtext" className="section">
-          <API />
+          <Api />
         </section>
       </main>
 

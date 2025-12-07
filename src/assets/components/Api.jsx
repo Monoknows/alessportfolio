@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './API.css';
+import './Api.css';
 
-function API() {
+function Api() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -150,4 +150,4 @@ function API() {
   );
 }
 
-export default API;
+export default Api;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Certificates.css";
+import "./Email.css";
 
 const Certificates = () => {
   const images = [
